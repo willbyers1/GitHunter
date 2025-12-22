@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHunter | Neon discovery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                        orbitron: ['Orbitron', 'sans-serif'],
+                    },
+                    colors: {
+                        cyber: {
+                            black: '#0f0f0f',
+                            purple: '#bc13fe',
+                            green: '#00ff41',
+                            blue: '#05d9e8',
+                            dark: '#1a1a1a'
+                        }
+                    },
+                    animation: {
+                        'pulse-neon': 'pulse-neon 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-neon': {
+                            '0%, 100%': { boxShadow: '0 0 10px #bc13fe, 0 0 20px #bc13fe' },
+                            '50%': { boxShadow: '0 0 20px #bc13fe, 0 0 40px #bc13fe' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .neon-text-purple {
+            text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+        }
+        .neon-text-green {
+            text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+        }
+        .neon-border-green {
+            box-shadow: 0 0 10px #00ff41;
+            border-color: #00ff41;
+        }
+        .cyber-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(188, 19, 254, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(188, 19, 254, 0.05) 1px, transparent 1px);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-mono cyber-grid min-h-screen">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
