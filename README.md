@@ -1,4 +1,4 @@
-# 🕵️ GitHunter
+# GitHunter
 
 > **Unveil the Code.** > A professional GitHub user explorer built with modern TypeScript and Clean Architecture.
 
