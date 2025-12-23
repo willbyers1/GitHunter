@@ -61,8 +61,7 @@ To run this project locally, follow these steps:
     npm run dev
     ```
 
-4.  Open your browser and navigate to `http://localhost:5173`.
-
+4.  Open your browser and navigate to `http://localhost:XXXX`.
 ## 🎮 Usage
 
 1.  **Input:** Type any valid GitHub username (e.g., `torvalds`, `willbyers1`) into the search bar.
